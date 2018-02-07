@@ -11,9 +11,18 @@ public class Main {
     public static void main(String[] args) {
         kGram testKGram = new kGram();
         HashSet<ArrayList<String>> resTest = new HashSet<ArrayList<String>>();
+        HashSet<String> resTestChar = new HashSet<String>();
 
         try {
             resTest = testKGram.kGramWordBased("test.txt", 2);
+        }
+
+        catch (IOException e) {
+
+        }
+
+        try {
+            resTestChar = testKGram.kGramCharBased("testChar.txt", 2);
         }
 
         catch (IOException e) {
@@ -29,6 +38,12 @@ public class Main {
             System.out.println();
         }
 
+        Iterator<String> it2 = resTestChar.iterator();
+
+        while(it2.hasNext()){
+            String str = it2.next();
+            System.out.println(str);
+        }
     }
 
 }
