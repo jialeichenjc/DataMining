@@ -37,7 +37,8 @@ public class kGram {
         ArrayList<Character> rawSet = new  ArrayList<Character>();
 
         File file = new File(filename);
-        Scanner sc = new Scanner(file).useDelimiter("\\s+");
+        Scanner sc = new Scanner(file).useDelimiter("");
+        //Scanner sc = new Scanner(file);
 
         while(sc.hasNext()) {
             //int temp = k;

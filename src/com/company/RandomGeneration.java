@@ -8,7 +8,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- * Created by super on 2/5/2018.
+ * Created by J.Chen on 2/5/2018.
  */
 public class RandomGeneration {
     public void measureTime(int m) throws IOException {
