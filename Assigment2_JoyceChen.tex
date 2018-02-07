@@ -7,7 +7,6 @@
 \usepackage{epsfig}
 \usepackage{xspace}
 \usepackage{color}
-\usepackage{url}
 \usepackage{enumitem}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -33,7 +32,7 @@
 \maketitle
 
 \section{Creating $k$-Grams}
-\begin{enumerate}[label=A.\arabic*]
+\begin{enumerate}[label=\textbf{\Alph*:}]
 \item
 I have the following sizes for each document \\
 \begin{enumerate}[label=\arabic*)]
@@ -64,7 +63,58 @@ D4 character based 2-grams: $255$
 \end{enumerate}
 
 \item
+\begin{enumerate}[label=B.\arabic*]
+\item
+2-grams based on words
+\begin{enumerate}[label=\arabic*)]
+\item
+\textbf{JS}$(D_{1}, D_{2}) = 0.941$
+\item
+\textbf{JS}$(D_{1}, D_{3}) = 0.182$
+\item
+\textbf{JS}$(D_{1}, D_{4}) = 0.030$
+\item
+\textbf{JS}$(D_{2}, D_{3}) = 0.174$
+\item
+\textbf{JS}$(D_{2}, D_{4}) = 0.030$
+\item
+\textbf{JS}$(D_{3}, D_{4}) = 0.016$
+\end{enumerate}
 
+\item
+2-grams based on characters
+\begin{enumerate}[label=\arabic*)]
+\item
+\textbf{JS}$(D_{1}, D_{2}) = 0.981$
+\item
+\textbf{JS}$(D_{1}, D_{3}) = 0.816$
+\item
+\textbf{JS}$(D_{1}, D_{4}) = 0.644$
+\item
+\textbf{JS}$(D_{2}, D_{3}) = 0.8$
+\item
+\textbf{JS}$(D_{2}, D_{4}) = 0.641$
+\item
+\textbf{JS}$(D_{3}, D_{4}) = 0.653$
+\end{enumerate}
+\item
+3-grams based on characters
+\begin{enumerate}[label=\arabic*)]
+\item
+\textbf{JS}$(D_{1}, D_{2}) = 0.978$
+\item
+\textbf{JS}$(D_{1}, D_{3}) = 0.580$
+\item
+\textbf{JS}$(D_{1}, D_{4}) = 0.305$
+\item
+\textbf{JS}$(D_{2}, D_{3}) = 0.568$
+\item
+\textbf{JS}$(D_{2}, D_{4}) = 0.306$
+\item
+\textbf{JS}$(D_{3}, D_{4}) = 0.312$
+\end{enumerate}
+
+\end{enumerate}
 
 \end{enumerate}
 

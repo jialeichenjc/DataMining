@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Scanner;
 
 /**
@@ -57,5 +58,59 @@ public class kGram {
         }
 
         return set;
+    }
+
+    public float JacSimWordGram(HashSet<ArrayList<String>> set1,
+                                HashSet<ArrayList<String>> set2) {
+        HashSet<ArrayList<String>> union = new HashSet<ArrayList<String>>();
+        HashSet<ArrayList<String>> intersect = new HashSet<ArrayList<String>>();
+
+        Iterator<ArrayList<String>> it1 = set1.iterator();
+        Iterator<ArrayList<String>> it2 = set2.iterator();
+
+        while(it1.hasNext()) {
+            ArrayList<String> curr = it1.next();
+            if(set2.contains(curr)) {
+                intersect.add(curr);
+            }
+            union.add(curr);
+        }
+
+        while(it2.hasNext()) {
+            union.add(it2.next());
+        }
+
+        float unionSize = union.size();
+        float interSize = intersect.size();
+        System.out.println("union size : " + unionSize);
+        System.out.println("intersection size: " + interSize);
+
+        return interSize/unionSize;
+    }
+
+    public float JacSimCharGram(HashSet<String> set1, HashSet<String> set2) {
+        HashSet<String> union = new HashSet<String>();
+        HashSet<String> intersect = new HashSet<String>();
+
+        Iterator<String> it1 = set1.iterator();
+        Iterator<String> it2 = set2.iterator();
+
+        while(it1.hasNext()) {
+            String curr = it1.next();
+            if(set2.contains(curr)) {
+                intersect.add(curr);
+            }
+            union.add(curr);
+        }
+
+        while(it2.hasNext()) {
+            union.add(it2.next());
+        }
+        float unionSize = union.size();
+        float interSize = intersect.size();
+        System.out.println("union size : " + unionSize);
+        System.out.println("intersection size: " + interSize);
+
+        return interSize/unionSize;
     }
 }

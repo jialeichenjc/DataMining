@@ -70,9 +70,18 @@ public class Main {
 
         }
 
+       // float d1_d2_wordBased2Gram = testKGram.JacSimWordGram(d1_2GramWordBased, d2_2GramWordBased);
+       // System.out.println(d1_d2_wordBased2Gram);
+        //float wordBased2Gram = testKGram.JacSimWordGram(d3_2GramWordBased, d4_2GramWordBased);
+       // System.out.println(wordBased2Gram);
+
+        float charBased3Gram = testKGram.JacSimCharGram(d3_3GramCharBased, d4_3GramCharBased);
+        System.out.println(charBased3Gram);
+
+
         //printWordGrams(d1_2GramWordBased);
 
-
+        /*
         try {
             resTestChar = testKGram.kGramCharBased("testChar.txt", 2);
         }
@@ -96,7 +105,7 @@ public class Main {
             String str = it2.next();
             System.out.println(str);
         }
-
+        */
     }
 
     public static void printWordGrams (HashSet<ArrayList<String>> set) {
