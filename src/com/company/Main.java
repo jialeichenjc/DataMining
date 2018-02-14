@@ -32,7 +32,7 @@ public class Main {
         HashSet<String> d4_2GramCharBased = new HashSet<String>();
 
         try {
-            resTest = testKGram.kGramWordBased("test.txt", 2);
+           /* resTest = testKGram.kGramWordBased("test.txt", 2);
             d1_2GramWordBased = testKGram.kGramWordBased("D1.txt", 2);
             d2_2GramWordBased = testKGram.kGramWordBased("D2.txt", 2);
             d3_2GramWordBased = testKGram.kGramWordBased("D3.txt", 2);
@@ -41,20 +41,31 @@ public class Main {
             System.out.println("d1_2GramWordBased " + d1_2GramWordBased.size());
             System.out.println("d2_2GramWordBased " + d2_2GramWordBased.size());
             System.out.println("d3_2GramWordBased " + d3_2GramWordBased.size());
-            System.out.println("d4_2GramWordBased " + d4_2GramWordBased.size());
+            System.out.println("d4_2GramWordBased " + d4_2GramWordBased.size());*/
 
             d1_3GramCharBased = testKGram.kGramCharBased("D1.txt", 3);
             d2_3GramCharBased = testKGram.kGramCharBased("D2.txt", 3);
-            d3_3GramCharBased = testKGram.kGramCharBased("D3.txt", 3);
-            d4_3GramCharBased = testKGram.kGramCharBased("D4.txt", 3);
-
-            System.out.println("d1_3GramCharBased " + d1_3GramCharBased.size());
-            System.out.println("d2_3GramCharBased " + d2_3GramCharBased.size());
-            System.out.println("d3_3GramCharBased " + d3_3GramCharBased.size());
-            System.out.println("d4_3GramCharBased " + d4_3GramCharBased.size());
+       //     d3_3GramCharBased = testKGram.kGramCharBased("D3.txt", 3);
+        //    d4_3GramCharBased = testKGram.kGramCharBased("D4.txt", 3);
 
 
-            d1_2GramCharBased = testKGram.kGramCharBased("D1.txt", 2);
+         MinHash minHash = new MinHash();
+         ArrayList<String> d1d2_Union = minHash.createUnion(d1_3GramCharBased, d2_3GramCharBased);
+         System.out.println("input union size " + d1d2_Union.size());
+         ArrayList<Integer> d1_minSig = minHash.getMinHashSig(600, d1d2_Union, d1_3GramCharBased);
+         ArrayList<Integer> d2_minSig = minHash.getMinHashSig(600, d1d2_Union, d2_3GramCharBased);
+
+
+         float res = minHash.jaccardSimMinHash(d1_minSig, d2_minSig, 600);
+
+        System.out.println(res);
+
+
+           // System.out.println("d3_3GramCharBased " + d3_3GramCharBased.size());
+            //System.out.println("d4_3GramCharBased " + d4_3GramCharBased.size());
+
+
+           /* d1_2GramCharBased = testKGram.kGramCharBased("D1.txt", 2);
             d2_2GramCharBased = testKGram.kGramCharBased("D2.txt", 2);
             d3_2GramCharBased = testKGram.kGramCharBased("D3.txt", 2);
             d4_2GramCharBased = testKGram.kGramCharBased("D4.txt", 2);
@@ -62,7 +73,7 @@ public class Main {
             System.out.println("d1_2GramCharBased " + d1_2GramCharBased.size());
             System.out.println("d2_2GramCharBased " + d2_2GramCharBased.size());
             System.out.println("d3_2GramCharBased " + d3_2GramCharBased.size());
-            System.out.println("d4_2GramCharBased " + d4_2GramCharBased.size());
+            System.out.println("d4_2GramCharBased " + d4_2GramCharBased.size());*/
 
         }
 
@@ -74,10 +85,6 @@ public class Main {
        // System.out.println(d1_d2_wordBased2Gram);
         //float wordBased2Gram = testKGram.JacSimWordGram(d3_2GramWordBased, d4_2GramWordBased);
        // System.out.println(wordBased2Gram);
-
-        float charBased3Gram = testKGram.JacSimCharGram(d3_3GramCharBased, d4_3GramCharBased);
-        System.out.println(charBased3Gram);
-
 
         //printWordGrams(d1_2GramWordBased);
 
@@ -97,13 +104,6 @@ public class Main {
                 System.out.print(list.get(i) + " ");
             }
             System.out.println();
-        }
-
-        Iterator<String> it2 = resTestChar.iterator();
-
-        while(it2.hasNext()){
-            String str = it2.next();
-            System.out.println(str);
         }
         */
     }

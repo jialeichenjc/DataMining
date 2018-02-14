@@ -119,10 +119,30 @@ D4 character based 2-grams: $255$
 \end{enumerate}
 
 \section{Min Hashing}
-
-\section{LSH}
-\begin{enumerate}[label=\Alph*]
+\begin{enumerate}[label=\textbf{\Alph*:}]
 \item
+\begin{enumerate}[label=\arabic*)]
+\item
+$t = 20$ \textbf{JS}$(D_{1}, D_{2}) = 0.95$
+\item
+$t = 60$ \textbf{JS}$(D_{1}, D_{2}) = 0.983$
+\item
+$t = 150$ \textbf{JS}$(D_{1}, D_{2}) = 0.98$
+\item
+$t = 300$ \textbf{JS}$(D_{1}, D_{2}) = 0.967$
+\item
+$t = 600$ \textbf{JS}$(D_{1}, D_{2}) = 0.973$
+\end{enumerate}
+\item
+I think $t = 150$ is a good number
+\end{enumerate}
+\section{LSH}\begin{enumerate}[label=\textbf{\Alph*:}]
+\item
+Using the trick mentioned in class, we can solve for $b$ as\\
+$b \approx -\log_{0.7} 160 = 14.22$
+
+\item
+Let $b = 14$, $t = 160$ then we have $r = t/b = 10$
 
 
 \end{enumerate}
