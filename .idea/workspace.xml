@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="499f3fa9-fdb8-46e5-ae57-1844a9c751df" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/company/MinHash.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/company/Point2D.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/company/Utility.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Assigment2_JoyceChen.pdf" afterPath="$PROJECT_DIR$/Assigment2_JoyceChen.pdf" />
-      <change beforePath="$PROJECT_DIR$/Assigment2_JoyceChen.synctex.gz" afterPath="$PROJECT_DIR$/Assigment2_JoyceChen.synctex.gz" />
-      <change beforePath="$PROJECT_DIR$/Assigment2_JoyceChen.tex" afterPath="$PROJECT_DIR$/Assigment2_JoyceChen.tex" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataMiningJava/com/company/Main.class" afterPath="$PROJECT_DIR$/out/production/DataMiningJava/com/company/Main.class" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" afterPath="$PROJECT_DIR$/src/com/company/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,21 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1075">
-              <caret line="58" column="70" lean-forward="false" selection-start-line="58" selection-start-column="70" selection-end-line="58" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/ArrayList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="447" column="0" lean-forward="false" selection-start-line="447" selection-start-column="0" selection-end-line="447" selection-end-column="0" />
+            <state relative-caret-position="325">
+              <caret line="16" column="85" lean-forward="true" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -44,11 +30,10 @@
       <file leaf-file-name="MinHash.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/MinHash.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
+            <state relative-caret-position="-769">
               <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1252#1261#0" expanded="true" />
                 <element signature="e#2020#2021#0" expanded="true" />
                 <element signature="e#2068#2069#0" expanded="true" />
                 <element signature="e#2099#2100#0" expanded="true" />
@@ -58,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="D4.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D4.txt">
+      <file leaf-file-name="RandomGeneration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/RandomGeneration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="25">
+              <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -101,34 +86,31 @@
       <file leaf-file-name="kGram.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/kGram.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="111" column="24" lean-forward="false" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="24" />
+            <state relative-caret-position="325">
+              <caret line="18" column="28" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="18" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Point2D.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Point2D.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utility.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Utility.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="478">
+              <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
               <folding>
-                <element signature="e#2009#2028#0" expanded="true" />
-                <element signature="e#2090#2109#0" expanded="true" />
-                <element signature="e#2888#2896#0" expanded="true" />
-                <element signature="e#2947#2955#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Coupon300TimesNoTime" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Coupon300TimesNoTime">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Coupon300Times" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Coupon300Times">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -167,7 +149,9 @@
         <option value="$PROJECT_DIR$/src/com/company/kGram.java" />
         <option value="$PROJECT_DIR$/src/MinHash.java" />
         <option value="$PROJECT_DIR$/src/com/company/MinHash.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Point2D.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Utility.java" />
       </list>
     </option>
   </component>
@@ -198,9 +182,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,7 +206,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -649,11 +633,12 @@
       <workItem from="1517885426309" duration="7233000" />
       <workItem from="1517972141119" duration="6005000" />
       <workItem from="1518025431964" duration="15146000" />
+      <workItem from="1519664812796" duration="3297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58392000" />
+    <option name="totallyTimeSpent" value="61689000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -715,21 +700,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Coupon1000Times">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Coupon300Times">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/In1000Times">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -755,12 +725,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="14" column="61" lean-forward="true" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
-          <folding>
-            <element signature="e#2009#2028#0" expanded="true" />
-            <element signature="e#2090#2109#0" expanded="true" />
-            <element signature="e#2888#2896#0" expanded="true" />
-            <element signature="e#2947#2955#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -776,7 +741,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="8" column="0" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -835,12 +799,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-          <folding>
-            <element signature="e#2009#2028#0" expanded="true" />
-            <element signature="e#2090#2109#0" expanded="true" />
-            <element signature="e#2888#2896#0" expanded="true" />
-            <element signature="e#2947#2955#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -856,7 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="8" column="0" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1005,7 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="8" column="0" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1025,16 +982,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/RandomGeneration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/D4.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1044,14 +991,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/D3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CollisionDensity">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1069,32 +1008,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/kGram.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="111" column="24" lean-forward="false" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="24" />
-          <folding>
-            <element signature="e#2009#2028#0" expanded="true" />
-            <element signature="e#2090#2109#0" expanded="true" />
-            <element signature="e#2888#2896#0" expanded="true" />
-            <element signature="e#2947#2955#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="325">
+          <caret line="18" column="28" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="18" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/ArrayList.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Point2D.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="447" column="0" lean-forward="false" selection-start-line="447" selection-start-column="0" selection-end-line="447" selection-end-column="0" />
+        <state relative-caret-position="400">
+          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/RandomGeneration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CollisionDensity">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/MinHash.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
+        <state relative-caret-position="-769">
           <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1252#1261#0" expanded="true" />
             <element signature="e#2020#2021#0" expanded="true" />
             <element signature="e#2068#2069#0" expanded="true" />
             <element signature="e#2099#2100#0" expanded="true" />
@@ -1103,11 +1052,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="447" column="0" lean-forward="false" selection-start-line="447" selection-start-column="0" selection-end-line="447" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1075">
-          <caret line="58" column="70" lean-forward="false" selection-start-line="58" selection-start-column="70" selection-end-line="58" selection-end-column="70" />
+        <state relative-caret-position="325">
+          <caret line="16" column="85" lean-forward="true" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Utility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
