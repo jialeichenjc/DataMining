@@ -14,8 +14,8 @@ public class Utility {
         int count = 0;
         Point2D pt;
         int id = 0;
-        float x = 0.0f;
-        float y = 0.0f;
+        double x = 0.0f;
+        double y = 0.0f;
         while(sc.hasNext()) {
            // System.out.println(sc.next());
 
@@ -25,11 +25,11 @@ public class Utility {
                     count++;
                     break;
                 case 1 :
-                    x = sc.nextFloat();
+                    x = sc.nextDouble();
                     count++;
                     break;
                 case 2 :
-                    y = sc.nextFloat();
+                    y = sc.nextDouble();
                     count++;
                     pt = new Point2D(id, x, y);
                     result.add(pt);
