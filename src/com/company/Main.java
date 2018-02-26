@@ -9,13 +9,22 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
+        HierarchicalClustering hCluster = new HierarchicalClustering();
         Utility util = new Utility();
+        ArrayList<Point2D> ptList = new ArrayList<>();
         try {
-            util.FileToPoint2D("ClusterData1.txt");
+            ptList = util.FileToPoint2D("ClusterDataTest.txt");
         }
+
         catch (IOException e) {
-            System.out.println("Please double check your file name and file format");
+
         }
+        int k = 4;
+        ArrayList<Cluster> result = hCluster.getKClusters(2, ptList);
+        for(Cluster c : result) {
+            util.PrintPt2D(c.centroid);
+        }
+
     }
 
     public static void printWordGrams (HashSet<ArrayList<String>> set) {

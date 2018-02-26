@@ -17,4 +17,9 @@ public class Point2D {
         this.y = 0.0;
     }
 
+    public static double getDistPoints(Point2D pt1, Point2D pt2) {
+        return Math.sqrt(Math.pow(pt1.x - pt2.x, 2)
+                + Math.pow(pt1.y - pt2.y, 2));
+    }
+
 }

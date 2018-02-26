@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Utility {
-    ArrayList<Point2D> FileToPoint2D(String filename) throws IOException {
+    public ArrayList<Point2D> FileToPoint2D(String filename) throws IOException {
         File file = new File(filename);
         Scanner sc = new Scanner(file).useDelimiter("\\s+");
         ArrayList<Point2D> result = new ArrayList<>();
@@ -37,7 +37,6 @@ public class Utility {
 
             }
         }
-        PrintPt2D(result);
         return result;
     }
 
@@ -47,4 +46,10 @@ public class Utility {
             System.out.println(pt.id + " " + pt.x + " " + pt.y);
         }
     }
+
+    void PrintPt2D(Point2D pt) {
+        System.out.println(pt.id + " " + pt.x + " " + pt.y);
+    }
+
+
 }
