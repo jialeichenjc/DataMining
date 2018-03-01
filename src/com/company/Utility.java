@@ -2,7 +2,10 @@ package com.company;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Utility {
@@ -38,6 +41,33 @@ public class Utility {
             }
         }
         return result;
+    }
+    void writeHashMapToFile(HashMap<Integer, ArrayList<Point2D>> map,
+                            String fileName) throws IOException {
+        PrintWriter writer = new PrintWriter(fileName, "UTF-8");
+        for(Map.Entry<Integer, ArrayList<Point2D>> entry : map.entrySet()) {
+            writer.println("CenterId: ");
+            writer.print(entry.getKey());
+            writer.println();
+            ArrayList<Point2D> currList = entry.getValue();
+
+            writer.println("Point ID ");
+            for(Point2D pt : currList) {
+                writer.println(pt.id);
+            }
+
+            writer.println("x coordinates: ");
+            for(Point2D pt : currList) {
+                writer.println(pt.x);
+            }
+
+            writer.println("y coordiates: ");
+            for(Point2D pt : currList) {
+                writer.println(pt.y);
+            }
+        }
+
+        writer.close();
     }
 
     void PrintPt2D(ArrayList<Point2D> ptList) {

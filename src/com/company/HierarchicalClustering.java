@@ -42,7 +42,6 @@ public class HierarchicalClustering {
 
 
         while(result.size() > k && !pq.isEmpty()) {
-            System.out.println("Test : " + pq.size());
             Pair<Cluster, Cluster> curr = pq.poll();
             Cluster cluster = mergeTwoClusters(curr.getKey(), curr.getValue());
             result.remove(curr.getKey());
@@ -85,14 +84,13 @@ public class HierarchicalClustering {
         ArrayList<Point2D> ptList2 = c2.pointList;
         System.out.println("list1 size: " + ptList1.size()
         + "list2 size: " + ptList2.size());
-        for(int i = 0; i < ptList1.size(); i++) {
-            for(int j = 0; j < ptList2.size(); j++) {
-                System.out.println("Now at i : " + i + " j : " + j);
-                double currDist = Point2D.getDistPoints(ptList1.get(i), ptList2.get(i));
+
+        for(Point2D pt1 : c1.pointList) {
+            for(Point2D pt2 : c2.pointList) {
+                double currDist = Point2D.getDistPoints(pt1, pt2);
                 minDist = Math.min(minDist, currDist);
             }
         }
-
         return minDist;
     }
 

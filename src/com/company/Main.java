@@ -9,20 +9,31 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        HierarchicalClustering hCluster = new HierarchicalClustering();
+        //HierarchicalClustering hCluster = new HierarchicalClustering();
         Utility util = new Utility();
         ArrayList<Point2D> ptList = new ArrayList<>();
+        ArrayList<Point2D> centers = new ArrayList<>();
+        KMeans kMeans = new KMeans();
         try {
-            ptList = util.FileToPoint2D("ClusterDataTest.txt");
+            ptList = util.FileToPoint2D("ClusterData2.txt");
         }
 
         catch (IOException e) {
 
         }
-        int k = 4;
-        ArrayList<Cluster> result = hCluster.getKClusters(2, ptList);
-        for(Cluster c : result) {
-            util.PrintPt2D(c.centroid);
+        int k = 3;
+
+        centers = kMeans.getKCenters(ptList, k);
+        HashMap<Integer, ArrayList<Point2D>> subsets = kMeans.assignToSubsets(ptList, centers);
+
+        try{
+            util.writeHashMapToFile(subsets, "Data2Subsets.txt");
+        }
+        catch (IOException e) {
+            System.out.println("exception occurred");
+        }
+        for(Point2D pt : centers) {
+            util.PrintPt2D(pt);
         }
 
     }
