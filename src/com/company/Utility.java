@@ -81,5 +81,9 @@ public class Utility {
         System.out.println(pt.id + " " + pt.x + " " + pt.y);
     }
 
-
+    public static void PrintHashMap(HashMap<Character, Integer> map) {
+        for(Character ch : map.keySet()) {
+            System.out.println(ch + " " + map.get(ch));
+        }
+    }
 }

@@ -9,32 +9,14 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        //HierarchicalClustering hCluster = new HierarchicalClustering();
-        Utility util = new Utility();
-        ArrayList<Point2D> ptList = new ArrayList<>();
-        ArrayList<Point2D> centers = new ArrayList<>();
-        KMeans kMeans = new KMeans();
+        MajorityCount mc = new MajorityCount();
+        HashMap<Character, Integer> map = new HashMap<>();
         try {
-            ptList = util.FileToPoint2D("ClusterData2.txt");
+            map = mc.GetKMajorityChars("data/FreqData1.txt", 9);
         }
+        catch (IOException e) {}
 
-        catch (IOException e) {
-
-        }
-        int k = 3;
-
-        centers = kMeans.getKCenters(ptList, k);
-        HashMap<Integer, ArrayList<Point2D>> subsets = kMeans.assignToSubsets(ptList, centers);
-
-        try{
-            util.writeHashMapToFile(subsets, "Data2Subsets.txt");
-        }
-        catch (IOException e) {
-            System.out.println("exception occurred");
-        }
-        for(Point2D pt : centers) {
-            util.PrintPt2D(pt);
-        }
+        Utility.PrintHashMap(map);
 
     }
 

@@ -7,7 +7,7 @@ x coordinates:
 y coordiates: 
 14.0
 CenterId: 
-111
+717
 Point ID 
 1
 2
