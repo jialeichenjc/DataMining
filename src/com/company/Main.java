@@ -12,7 +12,7 @@ public class Main {
         MajorityCount mc = new MajorityCount();
         HashMap<Character, Integer> map = new HashMap<>();
         try {
-            map = mc.GetKMajorityChars("data/FreqData1.txt", 9);
+            map = mc.GetKMajorityChars("data/FreqData2.txt", 9);
         }
         catch (IOException e) {}
 
