@@ -20,16 +20,13 @@ public class MajorityCount {
     // k is the number of counters
     HashMap<Character, Integer> GetKMajorityChars(String fileName, int k) throws IOException{
         counterMap = new HashMap<>();
-        ArrayList<Character> res = new ArrayList<>();
-        ArrayList<ArrayList<Integer>> test = new ArrayList<>();
-        test.add(new ArrayList<>());
-        test.get(0).add(1);
 
         BufferedReader reader = new BufferedReader(new FileReader(fileName));
 
         int val = 0;
-
+        int count = 0;
         while((val = reader.read()) != -1) {
+            count++;
             char ch = (char)val;
 
             if(counterMap.containsKey(ch)) {
@@ -46,16 +43,10 @@ public class MajorityCount {
                     //if(counterMap.get(c) == 0) counterMap.remove(c);
                 }
             }
-            /*
-            if(!counterMap.isEmpty()) {
-                counterMap.entrySet().removeIf(e-> counterMap.get(e) != null
-                        && counterMap.get(e) == 0);
-            }
-        */
+
             for(Iterator<Map.Entry<Character, Integer>> it = counterMap.entrySet().iterator(); it.hasNext(); ) {
                 Map.Entry<Character, Integer> entry = it.next();
                 if(entry.getValue() == 0) {
-                    System.out.println("Zero element: " + entry.getKey());
                     it.remove();
                 }
             }
@@ -66,6 +57,8 @@ public class MajorityCount {
             System.out.print(c + " count: " + counterMap.get(c));
         }
     */
+        System.out.println("Count: " + count);
+
         return counterMap;
     }
 

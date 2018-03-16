@@ -25,126 +25,62 @@
 
 
 
-\title{Data Mining - Asmt2 - Document Similarity and Hashing}
+\title{Data Mining - Asmt3 - Frequent Items}
 \author{Joyce Chen}
 
 \begin{document}
 \maketitle
 
-\section{Creating $k$-Grams}
+\section{Streaming Algorithms}
 \begin{enumerate}[label=\textbf{\Alph*:}]
 \item
-I have the following sizes for each document \\
-\begin{enumerate}[label=\arabic*)]
-\item
-D1 word based 2-grams: $279$
-\item
-D2 word based 2-grams: $278$
-\item
-D3 word based 2-grams: $337$
-\item
-D4 word based 2-grams: $232$
-\item
-D1 character based 3-grams: $765$
-\item
-D2 character based 3-grams: $762$
-\item
-D3 character based 3-grams: $828$
-\item
-D4 character based 3-grams: $698$
-\item
-D1 character based 2-grams: $263$
-\item
-D2 character based 2-grams: $262$
-\item
-D3 character based 2-grams: $269$
-\item
-D4 character based 2-grams: $255$
-\end{enumerate}
+Running Majority Count on Data 1 gives me:
+$a : 194715$
+$b : 147715$
+$c : 104715$
+$e : 1$
+$v : 1$
+$j : 1$
+$n : 1$
+$o : 1$
 
-\item
-\begin{enumerate}[label=B.\arabic*]
-\item
-2-grams based on words
-\begin{enumerate}[label=\arabic*)]
-\item
-\textbf{JS}$(D_{1}, D_{2}) = 0.941$
-\item
-\textbf{JS}$(D_{1}, D_{3}) = 0.182$
-\item
-\textbf{JS}$(D_{1}, D_{4}) = 0.030$
-\item
-\textbf{JS}$(D_{2}, D_{3}) = 0.174$
-\item
-\textbf{JS}$(D_{2}, D_{4}) = 0.030$
-\item
-\textbf{JS}$(D_{3}, D_{4}) = 0.016$
-\end{enumerate}
-
-\item
-2-grams based on characters
-\begin{enumerate}[label=\arabic*)]
-\item
-\textbf{JS}$(D_{1}, D_{2}) = 0.981$
-\item
-\textbf{JS}$(D_{1}, D_{3}) = 0.816$
-\item
-\textbf{JS}$(D_{1}, D_{4}) = 0.644$
-\item
-\textbf{JS}$(D_{2}, D_{3}) = 0.8$
-\item
-\textbf{JS}$(D_{2}, D_{4}) = 0.641$
-\item
-\textbf{JS}$(D_{3}, D_{4}) = 0.653$
-\end{enumerate}
-\item
-3-grams based on characters
-\begin{enumerate}[label=\arabic*)]
-\item
-\textbf{JS}$(D_{1}, D_{2}) = 0.978$
-\item
-\textbf{JS}$(D_{1}, D_{3}) = 0.580$
-\item
-\textbf{JS}$(D_{1}, D_{4}) = 0.305$
-\item
-\textbf{JS}$(D_{2}, D_{3}) = 0.568$
-\item
-\textbf{JS}$(D_{2}, D_{4}) = 0.306$
-\item
-\textbf{JS}$(D_{3}, D_{4}) = 0.312$
-\end{enumerate}
-
-\end{enumerate}
-
-\end{enumerate}
-
-\section{Min Hashing}
-\begin{enumerate}[label=\textbf{\Alph*:}]
-\item
-\begin{enumerate}[label=\arabic*)]
-\item
-$t = 20$ \textbf{JS}$(D_{1}, D_{2}) = 0.95$
-\item
-$t = 60$ \textbf{JS}$(D_{1}, D_{2}) = 0.983$
-\item
-$t = 150$ \textbf{JS}$(D_{1}, D_{2}) = 0.98$
-\item
-$t = 300$ \textbf{JS}$(D_{1}, D_{2}) = 0.967$
-\item
-$t = 600$ \textbf{JS}$(D_{1}, D_{2}) = 0.973$
-\end{enumerate}
-\item
-I think $t = 150$ is a good number
-\end{enumerate}
-\section{LSH}\begin{enumerate}[label=\textbf{\Alph*:}]
-\item
-Using the trick mentioned in class, we can solve for $b$ as\\
-$b \approx -\log_{0.7} 160 = 14.22$
-
-\item
-Let $b = 14$, $t = 160$ then we have $r = t/b = 10$
+nothing must occur more than 20 percent of the time 
+$a, b, c$ might occur more than 20 percent of the time
 
 
+Running Majority Count on Data 2 gives me:
+$a : 231429$
+$b : 121429$
+$c : 161430$
+$e : 1$
+$g : 1$
+\newline
+$a$ must occur more than 20 percent of the time
+$b, c$  might occur more than 20 percent of the time
+\item
+Running Count-min Sketch on Data 1 gives me:
+$a  : 283890$
+$b :  219588$
+$c :  176790$
+\newline
+$a,b$ must occur more than 20 percent of the time
+\newline
+$c$  might occur more than 20 percent of the time
+\newline
+Running Count-min Sketch on Data 2 gives me:
+$a  : 309583$
+$b : 184742$
+$c :  224755$
+\newline
+$a,c$ must occur more than 20 percent of the time
+\newline
+$b$  might occur more than 20 percent of the time
+
+\item
+I would hash the word first into an integer value
+
+\item
+It is easier to implement and the number of hash functions and buckets are independent of the input size. Most importantly it only requires one pass.
 \end{enumerate}
 
 \end{document}
